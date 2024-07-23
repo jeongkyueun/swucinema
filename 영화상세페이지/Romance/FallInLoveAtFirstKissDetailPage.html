@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영화상세페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"><!--네비게이션 바 부분-->
+    <div class="container">
+      <a class="josefin-sans navbar-brand" href="../../index.html">SWU CINEMA</a> <!--로고 클릭시, 메인화면 가기-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+        aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse noto-sans-kr" id="nav-menu">
+        <ul class="navbar-nav ms-auto my-2">
+          <li class="nav-item"><a class="nav-link" href="../../로그인/Login.html">로그인</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../로그인/회원가입/SelfIdentification.html">회원가입</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../마이페이지/MyPage.html">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="menu noto-sans-kr">
+    <a href="../../index.html">상영</a>
+    <a href="../../이벤트/Event.html">이벤트</a>
+    <a href="../../인기순위/allianceNdiscount.html">인기순위</a>
+    <a href="../../고객센터/CustomerService.html">고객센터</a>
+  </div>
+  <div class="container noto-sans-kr">
+    <div class="row">
+      <div class="col"> <!--가운데-->
+        <div class="row"> <!--영화소개-->
+          <div class="col-4"><!--영화 포스터-->
+            <img class="movieimg"  src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissPoster.jpg" alt="장난스런 키스 포스터">
+          </div>
+          <div class="col-8">
+            <div class="movieTitle"> <!--영화제목-->
+              <p>장난스런 키스</p>
+            </div>
+            <div class="movieBasicInformation" style="height: 68%;"> <!--영화정보-->
+              <p>장르 : 로맨스</p>
+              <p>감독 : 프랭키 첸</p>
+              <p>주연 : 왕대륙, 임윤</p>
+              <p>개봉일 : 2019.03.27.</p>
+              <p>평점 : 8.55</p>
+            </div>
+            <div> <!--'예매하기'와 '관심 버튼'-->
+              <div class="row">
+                <div class="col">
+                  <a href="../../예매/RunningTimeSchedule.html"><button type="button"
+                      class="btn btn-light button">예매하기</button></a> <!--예매하기 버튼-->
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-danger button">관심 <i class="bi bi-heart"></i></button>
+                  <!--관심 버튼-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div> <!--줄거리-->
+      <p class="introduceTitle">소개</p>
+      <p class="introduce">내가 좋아하는 사람이 날 좋아할 확률은 얼마나 될까?<br></br>♥<br></br>A반 남신 ‘장즈수’와 처음 본 순간 KISS한 F반 ‘위안샹친’!<br></br>수학처럼 안 풀려도 절대 포기할 수 없는 확률 0% 멀고도 용감한 짝사랑 일대기<br></br>♥<br></br>장난 아니게 설레는 로코의 새로운 흥행 공식<br></br>2019년 봄, 너 x 나 = 공식 ♡ 로코<br></br>장난스런 키스</p>
+    </div>
+    <div>
+      <div class="slider">
+        <div class="slides">
+          <img src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut1.jpg" class="slide" alt="장난스런 키스 스틸컷">
+          <img src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut2.jpg" class="slide" alt="장난스런 키스 스틸컷">
+          <img src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut3.jpg" class="slide" alt="장난스런 키스 스틸컷">
+          <img src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut4.jpg" class="slide" alt="장난스런 키스 스틸컷">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 text-center">
+          <button class="imgButton flex-end btn btn-light" id="prevBtn"><i
+              class="bi bi-chevron-compact-left"></i></button>
+        </div>
+        <div class="col text-center">
+          <img class="stilCutMenu" src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut1.jpg" alt="장난스런 키스 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut2.jpg" alt="장난스런 키스 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut3.jpg" alt="장난스런 키스 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="FallInLoveAtFirstKiss/FallInLoveAtFirstKissStillCut4.jpg" alt="장난스런 키스 스틸컷">
+        </div>
+        <div class="col-1">
+          <button class="imgButton flex-start btn btn-light" id="nextBtn"><i
+              class="bi bi-chevron-compact-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark noto-sans-kr"> <!-- 풋터 시작 -->
+    <div class="container text-justify py-4 mb-0">
+      <p>고객센터 전화번호 : 02-970-5114</p>
+      <p>주소 : 서울특별시 노원구 화랑로 621 서울여자대학교</p>
+      <p>회사 홈페이지 : <a href="http://www.swu.ac.kr" target="_blank" class="footerLink">http://www.swu.ac.kr</a></p>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>

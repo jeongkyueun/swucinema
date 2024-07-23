@@ -1,0 +1,108 @@
+body {
+    /*전체 배경, 글자 색*/
+    background-color: #000;
+    color: #fff;
+}
+
+.menu {
+    /*메뉴 바*/
+    background-color: white;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    width: 100vw;
+    margin: 7vh 0;
+}
+
+.menu a {
+    /*각각의 메뉴들*/
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    /*메뉴위에 글자 올릴 시, 색 변화*/
+    color: gray;
+}
+
+.underbar {
+    /*구분선*/
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.event {
+    /*전체 공통*/
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event-name {
+    /*현재 진행 중인 이벤트 제목*/
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.event-item {
+    /*이벤트 요소*/
+    flex: 0 0 calc(50% - 10px);
+    margin: 1% 0;
+    font-size: 24px;
+}
+
+.event-item img {
+    /*이벤트 이미지*/
+    width: 40%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.eventTitle {
+    /*제휴 및 할인 이벤트 제목*/
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.eventText {
+    /*제휴 및 할인 설명*/
+    color: #ccc;
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+
+.benefitEvent {
+    font-size: 45px;
+    margin: 10% 0 3% 0;
+}
+
+/*하단바*/
+footer {
+    color: #AAAAAA;
+}
+
+.footerLink {
+    text-decoration: none; 
+    color: #AAAAAA;
+}
+
+/*폰트*/
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
+}

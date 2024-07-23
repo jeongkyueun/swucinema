@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWU CINEMA 이벤트</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Event.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"> <!--네비게이션 바 부분-->
+        <div class="container">
+            <a class="josefin-sans navbar-brand" href="../index.html">SWU CINEMA</a> <!--로고 클릭시, 메인화면 가기-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link noto-sans-kr" href="../로그인/Login.html">로그인</a></li>
+                    <li class="nav-item"><a class="nav-link noto-sans-kr" href="../로그인/회원가입/SelfIdentification.html">회원가입</a></li>
+                    <li class="nav-item"><a class="nav-link noto-sans-kr" href="../마이페이지/MyPage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu noto-sans-kr">
+        <a href="../index.html">상영</a>
+        <a href="#top">이벤트</a>
+        <a href="../인기순위/allianceNdiscount.html">인기순위</a>
+        <a href="../고객센터/CustomerService.html">고객센터</a>
+    </div>
+    <div class="container noto-sans-kr" id="top">
+        <div class="event">
+            <div class="event-name noto-sans-kr"> <!--이벤트 제목-->
+                <p class="underbar">EVENT</p>
+                <p class="underbar">현재 진행 중인 이벤트</p>
+            </div>
+            <div class="event-item"> <!--듄-->
+                <img src="../영화상세페이지/SF/Dune/DunePoster.jpg" alt="이벤트 이미지 1">
+                <p>[듄] 현장 이벤트</p>
+            </div>
+            <div class="event-item"> <!--설국열차-->
+                <img src="../영화상세페이지/SF/Snowpiercer/SnowpiercerPoster.jpg" alt="이벤트 이미지 2">
+                <p>[설국열차] 재개봉 특전</p>
+            </div>
+            <div class="event-item"> <!--유미의세포들-->
+                <img src="../영화상세페이지/Animation/YumisCellsTheMovie/YumisCellsTheMoviePoster.jpg" alt="이벤트 이미지 3">
+                <p>[유미의 세포들] 현장 이벤트</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="event-item"> <!--마션-->
+                <img src="../영화상세페이지/SF/TheMartian/TheMartianPoster.jpg" alt="이벤트 이미지 4">
+                <p>[마션] 현장 이벤트</p>
+            </div>
+            <div class="event-item"> <!--주토피아-->
+                <img src="../영화상세페이지/Animation/Zootopia/ZootopiaPoster.jpg" alt="이벤트 이미지 5">
+                <p>[주토피아] SNS 공유 이벤트</p>
+            </div>
+        </div>
+        <div class="event-name"> <!--제휴 및 할인혜택 제목-->
+            <p class="underbar benefitEvent noto-sans-kr">제휴 및 할인 혜택</p>
+        </div>
+        <div class="event"> <!--서울여대-->
+            <p class="underbar eventTitle">1. 서울여대 제휴 할인</p>
+        </div>
+        <p class="eventText">- 서울여대 재학생은 영화 티켓 결제 시 10% 할인 혜택을 받으실 수 있습니다.</p>
+        <div class="event"> <!--카드할인-->
+            <p class="underbar eventTitle">2. 카드 할인 정보</p>
+        </div>
+        <p class="eventText">- xx 카드, yy 카드, zz 카드 소지 고객은 영화 티켓 결제 시 5% 할인 혜택을 받으실 수 있습니다.</p>
+    </div>
+    <footer class="bg-dark noto-sans-kr"> <!-- 풋터 시작 -->
+        <div class="container text-justify py-4 mb-0">
+            <p>고객센터 전화번호 : 02-970-5114</p>
+            <p>주소 : 서울특별시 노원구 화랑로 621 서울여자대학교</p>
+            <p>회사 홈페이지 : <a href="http://www.swu.ac.kr" target="_blank" class="footerLink">http://www.swu.ac.kr</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

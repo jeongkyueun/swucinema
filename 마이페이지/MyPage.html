@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWU CINEMA 마이페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"> <!--네비게이션 바 부분-->
+    <div class="container">
+      <a class="josefin-sans navbar-brand" href="../index.html">SWU CINEMA</a> <!--로고 클릭시, 메인화면 가기-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+        aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse noto-sans-kr" id="nav-menu">
+        <ul class="navbar-nav ms-auto my-2">
+          <li class="nav-item"><a class="nav-link" href="../로그인/Login.html">로그인</a></li>
+          <li class="nav-item"><a class="nav-link" href="../로그인/회원가입/SelfIdentification.html">회원가입</a></li>
+          <li class="nav-item"><a class="nav-link" href="#top">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 메뉴 부분 -->
+  <div class="menu noto-sans-kr">
+    <a href="../index.html">상영</a>
+    <a href="../이벤트/Event.html">이벤트</a>
+    <a href="../인기순위/allianceNdiscount.html">인기순위</a>
+    <a href="../고객센터/CustomerService.html">고객센터</a>
+  </div>
+
+  <!--메인 내용 부분-->
+  <div class="container myPage" id="top">
+    <div class="row">
+      <div class="col-10 profileBox"> <!--가운데-->
+        <div class="row"> <!--프로필-->
+          <div class="col-4">
+            <div> <!--프로필-->
+              <img class="profile" src="image/userImg.png" alt="프로필 사진">
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="nickName"> <!--닉네임-->
+              <p class="nickNameUser josefin-sans">User45648<p>
+              <p class="nickNameRank josefin-sans">Baby Audience</p>
+            </div>
+            <div class="setting"> <!--회원정보 수정-->
+              <p><a href="../로그인/회원가입/PersonalInformation.html" class="text-white noto-sans-kr" style="text-decoration: none;">회원정보 수정 ></a></p>
+            </div>
+            <div> <!--'예매'와 '포인트', '쿠폰'-->
+              <div class="threeMenu">
+                <div class="text-center threeMenuBorder">
+                  <p class="threeMenuIn"><a href="../예매/RunningTimeSchedule.html" class="threeMenuChoice noto-sans-kr">예매</a> |
+                    <a href="#" class="threeMenuChoice noto-sans-kr">포인트</a> | <a href="#" class="threeMenuChoice noto-sans-kr">쿠폰</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="movie noto-sans-kr">
+      <!--예매 내역 부분-->
+      <div class="row">
+        <div class="col">
+          <div class="movieMenu">예매내역 ></div>
+          <div class="movie-list">
+            <div class="movie-card">
+              <img src="../영화상세페이지/Romance/AboutTime/AboutTimePoster.jpg" alt="About Time">
+              <div class="overlay">
+                <p style="padding-top: 45%;">2024/06/30</p>
+                <p>12:00</p>
+                <a href="../영화상세페이지/Romance/AboutTimeDetailPage.html">상세보기</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="../영화상세페이지/Romance/FallInLoveAtFirstKiss/FallInLoveAtFirstKissPoster.jpg"
+                alt="Fall in Love at First Kiss">
+              <div class="overlay">
+                <p style="padding-top: 45%;">2024/07/06</p>
+                <p>16:00</p>
+                <a href="../영화상세페이지/Romance/FallInLoveAtFirstKissDetailPage.html">상세보기</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="../영화상세페이지/SF/Dune/DunePoster.jpg" alt="Dune">
+              <div class="overlay">
+                <p style="padding-top: 45%;">2024/07/15</p>
+                <p>11:00</p>
+                <a href="../영화상세페이지/SF/DuneDetailPage.html">상세보기</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="../영화상세페이지/Animation/TheBorrowers/TheBorrowersPoster.jpg" alt="TheBorrowers">
+              <div class="overlay">
+                <p style="padding-top: 45%;">2024/07/21</p>
+                <p>17:00</p>
+                <a href="../영화상세페이지/Animation/TheBorrowersDetailPage.html">상세보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--관심 있는 영화 부분-->
+      <div class="row">
+        <div class="col">
+          <div class="movieMenu">관심있는 영화 ></div> <!-- 흰색 타이틀로 변경 -->
+          <div class="movie-list">
+            <div class="movie-card">
+              <img src="../영화상세페이지/SF/Dune/DunePoster.jpg" alt="Dune">
+              <div class="overlay">
+                <a href="../영화상세페이지/SF/DuneDetailPage.html">상세보기</a>
+                <a href="../예매/RunningTimeSchedule.html">예매하기</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="../영화상세페이지/SF/TheMartian/TheMartianPoster.jpg" alt="The Martian">
+              <div class="overlay">
+                <a href="../영화상세페이지/SF/TheMartianDetailPage.html">상세보기</a>
+                <a href="../예매/RunningTimeSchedule.html">예매하기</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="../영화상세페이지/SF/Snowpiercer/SnowpiercerPoster.jpg" alt="Snowpiercer">
+              <div class="overlay">
+                <a href="../영화상세페이지/SF/SnowpiercerDetailPage.html">상세보기</a>
+                <a href="../예매/RunningTimeSchedule.html">예매하기</a>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="../영화상세페이지/Romance/FallInLoveAtFirstKiss/FallInLoveAtFirstKissPoster.jpg"
+                alt="Fall In Love At First Kiss">
+              <div class="overlay">
+                <a href="../영화상세페이지/Romance/FallInLoveAtFirstKissDetailPage.html">상세보기</a>
+                <a href="../예매/RunningTimeSchedule.html">예매하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark noto-sans-kr"> <!-- 풋터 시작 -->
+    <div class="container text-justify py-4 mb-0 ">
+      <p>고객센터 전화번호 : 02-970-5114</p>
+      <p>주소 : 서울특별시 노원구 화랑로 621 서울여자대학교</p>
+      <p>회사 홈페이지 : <a href="http://www.swu.ac.kr" target="_blank" class="footerLink">http://www.swu.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

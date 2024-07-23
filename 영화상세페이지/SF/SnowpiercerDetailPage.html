@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영화상세페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"><!--네비게이션 바 부분-->
+    <div class="container">
+      <a class="josefin-sans navbar-brand" href="../../index.html">SWU CINEMA</a> <!--로고 클릭시, 메인화면 가기-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+        aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse noto-sans-kr" id="nav-menu">
+        <ul class="navbar-nav ms-auto my-2">
+          <li class="nav-item"><a class="nav-link" href="../../로그인/Login.html">로그인</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../로그인/회원가입/SelfIdentification.html">회원가입</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../마이페이지/MyPage.html">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="menu noto-sans-kr">
+    <a href="../../index.html">상영</a>
+    <a href="../../이벤트/Event.html">이벤트</a>
+    <a href="../../인기순위/allianceNdiscount.html">인기순위</a>
+    <a href="../../고객센터/CustomerService.html">고객센터</a>
+  </div>
+  <div class="container noto-sans-kr">
+    <div class="row">
+      <div class="col"> <!--가운데-->
+        <div class="row"> <!--영화소개-->
+          <div class="col-4"><!--영화 포스터-->
+            <img class="movieimg" src="Snowpiercer/SnowpiercerPoster.jpg" alt="설국열차 포스터">
+          </div>
+          <div class="col-8">
+            <div class="movieTitle"> <!--영화제목-->
+              <p>설국열차</p>
+            </div>
+            <div class="movieBasicInformation" style="height: 68%;"> <!--영화정보-->
+              <p>장르 : SF, 액션, 드라마</p>
+              <p>감독 : 봉준호</p>
+              <p>주연 : 크리스 에반스, 송강호, 에드 해리스, 존 허트, 틸다 스윈튼, 제이미 벨, 옥타비아 스펜서</p>
+              <p>개봉일 : 2013.08.01.</p>
+              <p>평점 : 8.20</p>
+            </div>
+            <div> <!--'예매하기'와 '관심 버튼'-->
+              <div class="row">
+                <div class="col">
+                  <a href="../../예매/RunningTimeSchedule.html"><button type="button"
+                      class="btn btn-light button">예매하기</button></a> <!--예매하기 버튼-->
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-danger button">관심 <i class="bi bi-heart"></i></button>
+                  <!--관심 버튼-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div> <!--줄거리-->
+      <p class="introduceTitle">소개</p>
+      <p class="introduce">기상 이변으로 모든 것이 꽁꽁 얼어붙은 지구. <br><br>살아남은 사람들을 태운 기차 한 대가 끝없이 궤도를 달리고 있다. 춥고 배고픈 사람들이 바글대는 빈민굴 같은 맨 뒤쪽의 꼬리칸, 그리고 선택된
+        사람들이 술과 마약까지 즐기며 호화로운 객실을 뒹굴고 있는 앞쪽칸. <br><br>열차 안의 세상은 결코 평등하지 않다.<br><br> 기차가 달리기 시작한 17년 째, 꼬리칸의 젊은 지도자 커티스는 긴 세월 준비해 온
+        폭동을 일으킨다. 기차의 심장인 엔진을 장악, 꼬리칸을 해방시키고 마침내 기차 전체를 해방 시키기 위해 절대권력자 윌포드가 도사리고 있는 맨 앞쪽 엔진칸을 향해 질주하는 커티스와 꼬리칸 사람들.
+        <br><br>그들 앞에 예기치 못한 상황들이 기다리고 있는데…</p>
+    </div>
+    <div>
+      <div class="slider">
+        <div class="slides">
+          <img src="Snowpiercer/SnowpiercerStillCut1.jpg" class="slide" alt="설국열차 스틸컷">
+          <img src="Snowpiercer/SnowpiercerStillCut2.jpg" class="slide" alt="설국열차 스틸컷">
+          <img src="Snowpiercer/SnowpiercerStillCut3.jpg" class="slide" alt="설국열차 스틸컷">
+          <img src="Snowpiercer/SnowpiercerStillCut4.jpg" class="slide" alt="설국열차 스틸컷">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 text-center">
+          <button class="imgButton flex-end btn btn-light" id="prevBtn"><i
+              class="bi bi-chevron-compact-left"></i></button>
+        </div>
+        <div class="col text-center">
+          <img class="stilCutMenu" src="Snowpiercer/SnowpiercerStillCut1.jpg" alt="설국열차 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="Snowpiercer/SnowpiercerStillCut2.jpg" alt="설국열차 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="Snowpiercer/SnowpiercerStillCut3.jpg" alt="설국열차 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="Snowpiercer/SnowpiercerStillCut4.jpg" alt="설국열차 스틸컷">
+        </div>
+        <div class="col-1">
+          <button class="imgButton flex-start btn btn-light" id="nextBtn"><i
+              class="bi bi-chevron-compact-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark noto-sans-kr"> <!-- 풋터 시작 -->
+    <div class="container text-justify py-4 mb-0">
+      <p>고객센터 전화번호 : 02-970-5114</p>
+      <p>주소 : 서울특별시 노원구 화랑로 621 서울여자대학교</p>
+      <p>회사 홈페이지 : <a href="http://www.swu.ac.kr" target="_blank" class="footerLink">http://www.swu.ac.kr</a></p>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>

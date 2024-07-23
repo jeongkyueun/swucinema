@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    background-color: black;
+}
+
+.menu {
+    /*메뉴 바*/
+    background-color: white;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    width: 100vw;
+    margin: 7vh 0;
+    z-index: 2;
+    position: relative;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: grey;
+}
+
+.login {
+    width: 50%;
+    border: 0;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 5% 10%;
+    position: relative;
+    z-index: 1;
+}
+
+#login-form>input {
+    width: 100%;
+    height: 70px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+    border-radius: 6px;
+    background-color: #b3b3b3;
+}
+
+#login-form>input::placeholder {
+    color: black;
+}
+
+#login-form>input[type="submit"] {
+    color: black;
+    background-color: white;
+    margin-top: 5px;
+}
+
+#login-form>input[type="checkbox"] {
+    display: none;
+}
+
+#login-form input[type="checkbox"]+label {
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url('./backup/811/img/checker-off.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#login-form input[type="checkbox"]:checked+label {
+    background-image: url('./backup/811/img/checker-on.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.save {
+    display: flex;
+    justify-content: space-between;
+}
+
+.save>label {
+    color: #999999;
+}
+
+.save>span {
+    color: white;
+    margin-left: auto;
+}
+
+a {
+    color: #999999;
+    text-decoration: none;
+}
+
+p {
+    font-size: 420%;
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+form {
+    font-size: 20px;
+}
+
+/*폰트*/
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영화상세페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"><!--네비게이션 바 부분-->
+    <div class="container">
+      <a class="josefin-sans navbar-brand" href="../../index.html">SWU CINEMA</a> <!--로고 클릭시, 메인화면 가기-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+        aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse noto-sans-kr" id="nav-menu">
+        <ul class="navbar-nav ms-auto my-2">
+          <li class="nav-item"><a class="nav-link" href="../../로그인/Login.html">로그인</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../로그인/회원가입/SelfIdentification.html">회원가입</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../마이페이지/MyPage.html">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="menu noto-sans-kr">
+    <a href="../../index.html">상영</a>
+    <a href="../../이벤트/Event.html">이벤트</a>
+    <a href="../../인기순위/allianceNdiscount.html">인기순위</a>
+    <a href="../../고객센터/CustomerService.html">고객센터</a>
+  </div>
+  <div class="container noto-sans-kr">
+    <div class="row">
+      <div class="col"> <!--가운데-->
+        <div class="row"> <!--영화소개-->
+          <div class="col-4"><!--영화 포스터-->
+            <img class="movieimg" src="YumisCellsTheMovie/YumisCellsTheMoviePoster.jpg" alt="유미의 세포들 더 무비 포스터">
+          </div>
+          <div class="col-8">
+            <div class="movieTitle"> <!--영화제목-->
+              <p>유미의 세포들 더 무비</p>
+            </div>
+            <div class="movieBasicInformation" style="height: 68%;"> <!--영화정보-->
+              <p>장르 : 애니메이션</p>
+              <p>감독 : 김다희</p>
+              <p>주연 : 윤아영, 신범식, 송하림, 안소이, 사문영, 이슬, 박지윤, 심규혁, 엄상현, 정재헌</p>
+              <p>개봉일 : 2024.04.03.</p>
+              <p>평점 : 8.47</p>
+            </div>
+            <div> <!--'예매하기'와 '관심 버튼'-->
+              <div class="row">
+                <div class="col">
+                  <a href="../../예매/RunningTimeSchedule.html"><button type="button"
+                      class="btn btn-light button">예매하기</button></a> <!--예매하기 버튼-->
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-danger button">관심 <i class="bi bi-heart"></i></button>
+                  <!--관심 버튼-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div> <!--줄거리-->
+      <p class="introduceTitle">소개</p>
+      <p class="introduce">“사랑이의 마음이 나를 웃음 짓게 했고 불안이의 걱정이 나를 나아가게 했어” <br><br> 오랜 꿈이던 작가가 되기 위해 퇴사 후 공모전을 준비하기로 결심한 유미. 완벽한 글쓰기 일정을 만드는 ‘스케줄
+        세포’부터 글감을 찾기 위해 뛰어다니는 ‘작가 세포’와 허리띠를 졸라매는 ‘자린고비 세포’까지 모두가 유미의 꿈을 위해 열심히 노력한다. 하지만 미래에 대한 걱정이 유미의 ‘불안 세포’를 점점
+        자라나게 하고 바비와의 흔들리는 관계로 흑화한 ‘사랑 세포’까지 세포들 사이에 갈등이 고조되며 세포 마을은 절체절명의 위기에 처하는데…</p>
+    </div>
+    <div>
+      <div class="slider">
+        <div class="slides">
+          <img src="YumisCellsTheMovie/YumisCellsTheMovieStillCut1.jpg" class="slide" alt="유미의 세포들 더 무비 스틸컷">
+          <img src="YumisCellsTheMovie/YumisCellsTheMovieStillCut2.jpg" class="slide" alt="유미의 세포들 더 무비 스틸컷">
+          <img src="YumisCellsTheMovie/YumisCellsTheMovieStillCut3.jpg" class="slide" alt="유미의 세포들 더 무비 스틸컷">
+          <img src="YumisCellsTheMovie/YumisCellsTheMovieStillCut4.jpg" class="slide" alt="유미의 세포들 더 무비 스틸컷">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 text-center">
+          <button class="imgButton flex-end btn btn-light" id="prevBtn"><i
+              class="bi bi-chevron-compact-left"></i></button>
+        </div>
+        <div class="col text-center">
+          <img class="stilCutMenu" src="YumisCellsTheMovie/YumisCellsTheMovieStillCut1.jpg" alt="유미의 세포들 더 무비 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="YumisCellsTheMovie/YumisCellsTheMovieStillCut2.jpg" alt="유미의 세포들 더 무비 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="YumisCellsTheMovie/YumisCellsTheMovieStillCut3.jpg" alt="유미의 세포들 더 무비 스틸컷">
+        </div>
+        <div class="col">
+          <img class="stilCutMenu" src="YumisCellsTheMovie/YumisCellsTheMovieStillCut4.jpg" alt="유미의 세포들 더 무비 스틸컷">
+        </div>
+        <div class="col-1">
+          <button class="imgButton flex-start btn btn-light" id="nextBtn"><i
+              class="bi bi-chevron-compact-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark noto-sans-kr"> <!-- 풋터 시작 -->
+    <div class="container text-justify py-4 mb-0">
+      <p>고객센터 전화번호 : 02-970-5114</p>
+      <p>주소 : 서울특별시 노원구 화랑로 621 서울여자대학교</p>
+      <p>회사 홈페이지 : <a href="http://www.swu.ac.kr" target="_blank" class="footerLink">http://www.swu.ac.kr</a></p>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>
