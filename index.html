@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SWU CINEMA</title>
+    <!-- Bootstrap CSS 불러오기 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- 사용자 정의 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"> <!--네비게이션 바 부분-->
+        <!-- 네비게이션 바 -->
+        <div class="container">
+            <a class="josefin-sans navbar-brand" href="#top">SWU CINEMA</a> <!--로고 클릭시, 메인화면 가기-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse noto-sans-kr" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" href="로그인/Login.html">로그인</a></li>
+                    <li class="nav-item"><a class="nav-link" href="로그인/회원가입/SelfIdentification.html">회원가입</a></li>
+                    <li class="nav-item"><a class="nav-link" href="마이페이지/MyPage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center my-5 josefin-sans" id="top">
+        <h1 class="display-1 text-white">SWU</h1>
+        <h1 class="display-1 text-white">CINEMA</h1>
+    </div>
+
+    <div class="menu noto-sans-kr">
+        <a href="#top">상영</a>
+        <a href="이벤트/Event.html">이벤트</a>
+        <a href="인기순위/allianceNdiscount.html">인기순위</a>
+        <a href="고객센터/CustomerService.html">고객센터</a>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <!-- 슬라이드 이미지 -->
+            <img src="영화상세페이지/Romance/PrideAndPrejudice/PrideAndPrejudiceStillCut4.jpg" class="slide"
+                alt="Pride & Prejudice">
+            <img src="영화상세페이지/SF/TheMartian/TheMartianStillCut2.jpg" class="slide" alt="The Martian">
+            <img src="영화상세페이지/SF/Dune/DuneStillCut3.jpg" class="slide" alt="Dune">
+            <img src="영화상세페이지/Animation/TheBorrowers/TheBorrowersStillCut2.jpg" class="slide" alt="TheBorrowers">
+            <img src="영화상세페이지/Romance/AboutTime/AboutTimeStillCut4.jpg" class="slide" alt="About Time">
+        </div>
+        <!-- 이전 슬라이드 버튼 -->
+        <button class="prevBtn" id="prevBtn"><i class="bi bi-chevron-compact-left"></i></button> <!-- '<' 버튼 -->
+        <!-- 다음 슬라이드 버튼 -->
+        <button class="nextBtn" id="nextBtn"><i class="bi bi-chevron-compact-right"></i></button> <!-- '>' 버튼 -->
+    </div>
+    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
+    </div>
+    <!-- 장르별 영화 목록 -->
+    <div class="container genre-section noto-sans-kr">
+        <!-- 로맨스 장르 -->
+        <div class="row">
+            <div class="col">
+                <div class="genre-title">로맨스 ></div>
+
+                <div class="movie-list">
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Romance/AboutTime/AboutTimePoster.jpg" alt="About Time">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Romance/AboutTimeDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Romance/FallInLoveAtFirstKiss/FallInLoveAtFirstKissPoster.jpg"
+                            alt="Fall in Love at First Kiss">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Romance/FallInLoveAtFirstKissDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Romance/Titanic/TitanicPoster.jpg" alt="Titanic">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Romance/TitanicDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Romance/PrideAndPrejudice/PrideAndPrejudicePoster.jpg"
+                            alt="Pride & Prejudice">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Romance/PrideAndPrejudiceDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SF 장르 -->
+        <div class="row">
+            <div class="col">
+                <div class="genre-title">SF ></div> <!-- 흰색 타이틀로 변경 -->
+                <div class="movie-list">
+                    <div class="movie-card">
+                        <img src="영화상세페이지/SF/Dune/DunePoster.jpg" alt="Dune">
+                        <div class="overlay">
+                            <a href="영화상세페이지/SF/DuneDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/SF/TheMartian/TheMartianPoster.jpg" alt="The Martian">
+                        <div class="overlay">
+                            <a href="영화상세페이지/SF/TheMartianDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/SF/Snowpiercer/SnowpiercerPoster.jpg" alt="Snowpiercer">
+                        <div class="overlay">
+                            <a href="영화상세페이지/SF/SnowpiercerDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/SF/Interstellar/InterstellarPoster.jpg" alt="Interstellar">
+                        <div class="overlay">
+                            <a href="영화상세페이지/SF/InterstellarDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 애니메이션 장르 -->
+        <div class="row">
+            <div class="col">
+                <div class="genre-title">애니메이션 ></div>
+                <div class="movie-list">
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Animation/YumisCellsTheMovie/YumisCellsTheMoviePoster.jpg" alt="Yumi's Cells">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Animation/YumisCellsTheMovieDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Animation/TheBorrowers/TheBorrowersPoster.jpg" alt="TheBorrowers">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Animation/TheBorrowersDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Animation/TheGirlWhoLeaptThroughTime/TheGirlWhoLeaptThroughTimePoster.jpg"
+                            alt="The Girl Who Leapt Through Time">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Animation/TheGirlWhoLeaptThroughTimeDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="영화상세페이지/Animation/Zootopia/ZootopiaPoster.jpg" alt="Zootopia">
+                        <div class="overlay">
+                            <a href="영화상세페이지/Animation/ZootopiaDetailPage.html">상세보기</a>
+                            <a href="예매/RunningTimeSchedule.html">예매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery 라이브러리 로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+YE4Lp6h5dciuVeL8qndjF/+PnxVi7zE0n7JhG"
+        crossorigin="anonymous"></script>
+
+    <!--마지막에 위치한 아래 바-->
+    <!-- 풋터 -->
+    <footer class="bg-dark noto-sans-kr"> <!-- 풋터 시작 -->
+        <div class="container text-justify py-4 mb-0">
+            <p>고객센터 전화번호 : 02-970-5114</p>
+            <p>주소 : 서울특별시 노원구 화랑로 621 서울여자대학교</p>
+            <p>회사 홈페이지 : <a href="http://www.swu.ac.kr" target="_blank" class="footerLink">http://www.swu.ac.kr</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

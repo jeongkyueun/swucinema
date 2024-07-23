@@ -1,0 +1,211 @@
+body {
+    margin: 0; /* 기본 여백 제거 */
+    background-color: black; /* 배경색 */
+}
+
+/* 메뉴 스타일 */
+.menu {
+    background-color: #ffffff; /* 메뉴 배경색 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    padding: 10px 0; /* 패딩 */
+    width: 100vw; /* 너비 100% */
+    margin: 0; /* 여백 없음 */
+    margin-bottom: 50px; /* 아래 여백 */
+}
+
+.menu a {
+    color: #151515; /* 링크 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    padding: 0 20px; /* 좌우 패딩 */
+    font-weight: bold; /* 굵게 */
+}
+
+.menu a:hover {
+    color: grey; /* 호버 시 색상 변경 */
+}
+
+#top {
+    padding-top: 6%;
+}
+
+/* 장르 섹션의 위아래 패딩 */
+.genre-section {
+    padding: 30px 0; 
+}
+
+/* 장르 간 간격 스타일 */
+.genre-section .row {
+    margin-bottom: 30px;/* 행 간격 조정 */
+}
+
+.genre-title {
+    font-size: 24px; /* 장르 제목의 글씨 크기 */
+    font-weight: bold; /* 제목 굵게 */
+    margin-bottom: 20px; /* 제목 아래 여백 */
+    color: white; /* 흰색으로 변경 */
+}
+
+.movie-list {
+    display: flex; /* 영화 리스트를 플렉스 박스로 설정 */
+    gap: 30px; /* 카드 간격 */
+    overflow-x: auto; /* 가로 스크롤 가능 */
+    align-items: center; /* 수직 정렬 */
+    scroll-behavior: smooth; /* 스크롤 부드럽게 */
+    justify-content: center; /* 영화 리스트 가운데 정렬 */
+}
+
+/* 영화 리스트의 가로 스크롤바를 숨김 */
+.movie-list::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨김 */
+}
+
+/*영화 카드*/
+.movie-card {
+    width: 300px;  /* 각 영화 카드의 너비 설정 */
+    height: 450px;  /* 각 영화 카드의 높이 설정 */
+    position: relative; /* 자식 요소의 절대 위치를 위한 기준 설정 */
+    cursor: pointer; /* 마우스 커서가 포인터로 변경 */
+    overflow: hidden;  /* 이미지가 카드 크기를 넘지 않도록 설정 */
+}
+
+.movie-card img {
+    width: 100%; /* 이미지 너비 100% */
+    height: 100%; /* 이미지 높이 100% */
+    object-fit: cover; /* 이미지를 컨테이너에 맞추기 위해 자르기 */
+}
+
+.movie-card:hover img {
+    filter: brightness(70%);  /* 카드에 마우스를 올렸을 때 이미지 밝기 조정 */
+}
+
+.movie-card .overlay {
+    position: absolute; /* 오버레이 위치 설정 */
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    opacity: 0; /* 초기 투명도 설정 */
+    transition: opacity 0.3s; /* 투명도 변화에 애니메이션 적용 */
+}
+
+.overlay {
+    width: 100%; /* 너비 100% */
+    height: 100%; /* 높이 100% */
+    font-size: 24px;
+}
+
+.movie-card:hover .overlay {
+    opacity: 1; /* 호버 시 오버레이 투명도 변경 */
+}
+
+/* 상세보기 버튼 스타일 */
+.overlay a {
+    display: inline-block; /* 링크 블록으로 표시 */
+    padding: 10px 20px; /* 링크 패딩 */
+    background-color: #000000; /* 배경색 */
+    color: white; /* 글씨 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin-right: 10px; /* 오른쪽 여백 */
+    position: absolute; /* 절대 위치 */
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    border-radius: 40px; /* 모서리 둥글게 */
+}
+
+.overlay a:first-child {
+    top: 40%; /* 상단에서부터의 위치 조정 */
+}
+
+.overlay a:last-child {
+    top: 60%; /* 하단에서부터의 위치 조정 */
+}
+
+/* 메뉴바 아래 간격 스타일 */
+.container-fluid.bg-black.py-3 {
+    margin-bottom: 30px; /* 간격 조정 */
+}
+
+/* 슬라이드 이미지 부분 */
+.slider {
+    width: 100%; /* 슬라이드 너비 */
+    max-width: 100%; /* 최대 너비 */
+    height: 500px; /* 슬라이드 높이 */
+    overflow: hidden; /* 넘치는 부분 숨김 */
+    position: relative; /* 자식 요소의 절대 위치를 위한 기준 설정 */
+    margin: 0 auto 2% auto; /* 중앙 정렬 및 하단 여백 */
+}
+
+/*슬라이드 이미지 칸*/
+.slides {
+    display: flex; /* 슬라이드 나열 */
+    transition: transform 0.5s ease-in-out; /* 슬라이드 전환 애니메이션 */
+    height: 100%; /* 슬라이드 높이 */
+}
+
+/* 슬라이드 이미지들 */
+.slide {
+    min-width: 100%; /* 각 슬라이드 최소 너비 */
+    height: 100%; /* 슬라이드 높이 */
+    object-fit: cover; /* 이미지 비율 유지 */
+    transition: opacity 0.5s ease-in-out; /* 투명도 변화 애니메이션 */
+}
+
+
+/*슬라이드 이미지 이전, 다음 버튼 설정*/
+.prevBtn, .nextBtn {
+    position: absolute; /* 절대 위치 */
+    top: 50%; /* 세로 중앙 */
+    transform: translateY(-50%); /* 중앙 정렬 */
+    background: transparent; /* 투명 배경 */
+    border: none; /* 테두리 없음 */
+    color: white; /* 글씨 색상 */
+    font-size: 50px; /* 버튼 크기 */
+    cursor: pointer; /* 커서 포인터 */
+    width: 100px; /* 버튼 너비 */
+    height: 150px; /* 버튼 높이 */
+}
+
+/*슬라이드 이미지 이전 버튼의 위치*/
+.prevBtn {
+    left: 10px; /* 왼쪽 위치 */
+}
+
+/*슬라이드 이미지 다음 버튼의 위치*/
+.nextBtn {
+    right: 10px; /* 오른쪽 위치 */
+}
+
+/* 미디어 쿼리: 창 축소 시 영화 이미지 카드 크기 조절 */
+@media (max-width: 768px) {
+    .movie-card {
+        width: 100%; /* 작은 화면에서 카드 너비 100% */
+        height: auto; /* 높이 자동 조정 */
+    }
+}
+
+/* 풋터 */
+footer {
+    color: #AAAAAA;
+}
+
+.footerLink {
+    text-decoration: none; 
+    color: #AAAAAA;
+}
+
+/*폰트*/
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
+}
+
